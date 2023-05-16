@@ -1,0 +1,119 @@
+:root {
+    --color-one: #20005A;
+    --color-two: #F6F8F9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inter,sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    font-size: 15pt;
+    padding: 0 100px;
+    color: #FFFFFF;
+    background-color: var(--color-one);
+}
+
+header > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+main {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    border-right: 2px solid var(--color-one);
+}
+
+button {
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    transition: all 0.2s;
+    color: var(--color-one);
+    background-color: #FFFFFF;
+}
+
+button:hover {
+    font-weight: bold;
+    color: var(--color-two);
+    background-color: var(--color-one);
+}
+
+.productsInStock {
+    cursor: none;
+    color: #FFFFFF;
+    background-color: var(--color-one);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+table {
+    width: 1000px;
+}
+
+thead {
+    color: #FFFFFF;
+    background-color: var(--color-one);
+}
+
+th {
+    padding: 5px;
+}
+
+td {
+    border: 1px solid var(--color-one);
+    padding: 5px;
+}
+
+tr {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin-top: 50px;
+}
+
+.button {
+    width: 100px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid var(--color-one);
+    border-radius: 50px;
+    transition: all 0.2s;
+    color: var(--color-one);
+}
+
+.button:hover {
+    font-weight: bold;
+    border-radius: 50px;
+    color: var(--color-two);
+    background-color: var(--color-one);
+}

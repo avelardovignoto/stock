@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistema de gestão de estoque</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <p>Logo</p>
+            <a href="form.html">Adicionar Produto</a>
+        </header>
+        <main>
+            <div class="menu">
+                <button class="productsInStock">Produtos em Estoque</button>
+                <button>Buscar um Produto</button>
+                <button>Atualizar quantidade de Produtos</button>
+            </div>
+            
+            <div class="content">
+                <table id="table">  
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nome do Produto</th>
+                            <th>Quantidade do Produto</th>
+                            <th>Fornecedores</th>
+                            <th>Data de Estocagem</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-products"></tbody>
+                </table>
+                <div class="container">
+                    <button id="previous-page-button" class="button">Anterior</button>
+                    <div class="pagination"></div>
+                    <button id="next-page-button" class="button">Próxima</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
